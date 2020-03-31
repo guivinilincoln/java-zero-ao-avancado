@@ -1,0 +1,24 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Triangle;
+
+public class ProgramOrientacao {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Triangle triangleA, triangleB;
+		
+		System.out.println("Enter the measures of triangle X: ");
+		double a = sc.nextDouble();
+		int b = sc.nextDouble();
+		int c = sc.nextDouble();
+		triangleA = new Triangle(a, b, c);
+		System.out.println("Enter the measures of triangle Y: ");
+		yA = sc.nextDouble();
+		yB = sc.nextDouble();
+		yC = sc.nextDouble();
+	}
+}

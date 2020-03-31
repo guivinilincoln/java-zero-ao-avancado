@@ -1,0 +1,12 @@
+package application;
+
+public class AddProductStock {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Enter product data: ");
+		System.out.print();
+		
+	}
+	
+}

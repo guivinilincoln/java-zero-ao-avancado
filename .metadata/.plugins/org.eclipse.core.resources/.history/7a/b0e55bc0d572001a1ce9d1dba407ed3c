@@ -1,0 +1,10 @@
+package curso_programacao;
+
+import com.sun.java_cup.internal.runtime.Scanner;
+
+public class uri1003 {
+	public static void main(String[] args) {
+
+
+	}
+}

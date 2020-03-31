@@ -1,0 +1,28 @@
+package curso_programacao;
+
+public class FuncoesInteressantesString {
+	public static void main(String[] args) {
+		
+		String original = "abcde FGHIJ ABC abc DEFG ";
+		String s01 = original.toLowerCase(); // Convert tudo para minuscula
+		String s02 = original.toUpperCase(); // Convert tudo para mainuscula
+		String s03 = original.trim(); // Tira os espaços em branco no começo e no fim da string
+		String s04 = original.substring(2); // Recorta apartir de quando começa 
+		String s05 = original.substring(2, 9); // Recorta de string 2 até a 9
+		String s06 = original.replace('a', 'x'); //Troca o primeiro pelo segundo
+		String s07 = original.replace("abc", "xy"); // Troca a palavra abc por xy
+		int i = original.indexOf("bc"); //  Traz a posição da primeira String com bc
+		int j = original.lastIndexOf("bc");  //  Traz a posição da primeira String com bc
+		
+		System.out.println("Original: -" + original + "-");
+		System.out.println("toLowerCase: -" + s01 + "-");
+		System.out.println("toUpperCase: -" + s02 + "-");
+		System.out.println("trim: -" + s03 + "-");
+		System.out.println("substring(2): -" + s04 + "-");
+		System.out.println("substring(2, 9): -" + s05 + "-");
+		System.out.println("replace('a', 'x'): -" + s06 + "-");
+		System.out.println("replace('abc', 'xy'): -" + s07 + "-");
+		System.out.println("Index of 'bc': " + i);
+		System.out.println("Last index of 'bc': " + j);
+	}
+}

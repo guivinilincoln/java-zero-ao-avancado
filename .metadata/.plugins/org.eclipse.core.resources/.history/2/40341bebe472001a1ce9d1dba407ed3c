@@ -1,0 +1,46 @@
+package entities;
+
+public class Product {
+
+	private String name;
+	private double price = 900.00;
+	private int quantity = 10;
+
+	public double totalValueInStock() {
+		return getPrice() * getQuantity();
+	}
+
+	public void addProducts(int qtd) {
+		this.quantity += qtd;
+	}
+
+	public void removeProducts(int qtd) {
+		this.quantity -= qtd;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	public String toString() {
+		return name + ", $ " + String.format("%.2f", price) + ", " + quantity + " units, Total: $ "
+				+ String.format("%.2f", totalValueInStock());
+	}
+
+}
